@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <title>Галлерея</title>
     <style>
-        body {
+        body{
             margin: auto;
             width: 40%
-
         }
-        .gallery {
-            list-style-type: none;
+        .gallery{
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
-            margin: auto;
-        }
+            list-style-type: none;
+            flex-wrap: wrap;
 
-        .gallery li {
-            flex-basis: 33.33%;
-            box-sizing: border-box;
+        }
+        .gallery li{
+            flex: 0 0 30%;
+            margin: 1%;
             padding: 2%;
-            padding-left: 7%;
-        }
+            box-sizing: border-box;
 
-        .gallery li img {
-            padding: 4%;
-            border: 0.4rem solid black;
-            display: block;
+        }
+        .gallery li img{
             width: 100%;
             height: auto;
+            padding: 4%;
+            border: 0.4rem black solid;
         }
-
     </style>
 </head>
 <body>
