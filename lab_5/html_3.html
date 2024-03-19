@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адаптивные карты</title>
+    <style>
+        body{
+            background-color: rgb(238, 238, 238);
+            font-family: Helvetica, sans-serif;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            max-width: 400px;
+        }
+        h2{
+            font-family: Georgia, serif;
+            font-size: 1em/1.2;
+        }
+        button {
+            background-color: rgb(0, 153, 0);
+            color: white;
+            border: none;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 3px;
+        }
+        .card{
+            background-color:  rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .text-container{
+            padding: 20px;
+            text-align: left;
+        }
+        img {
+            border-radius: 2% 2% 0 0;
+            width: 100%;
+        }
+        .button-container{
+            display: flex;
+            margin-bottom: 20px;
+            margin-left: 285px;
+        }
+        @media (max-width: 500px) {
+            .button-container {
+                padding: 10px;
+                margin-left: 230px;
+            }
+            .text-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="card"><img src="https://images.unsplash.com/photo-1538230942844-e89414a0692d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34dcc54db235ce71b59c1d5ada02bdc4&auto=format&fit=crop&w=400&q=80">
+    <div class="text-container">
+        <h2>Card Title</h2>
+        <p>Short description of what this is all about - crafted to make people interested</p>
+    </div>
+    <button type="submit" class="button-container">See more</button>
+    </div>
+</section>
+</body>
+</html>
